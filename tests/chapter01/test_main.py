@@ -1,3 +1,4 @@
+import json
 from unittest import TestCase
 
 from src.chapter01.main import get_bill
@@ -34,13 +35,11 @@ class Test(TestCase):
         """
 
     def test_get_bill(self):
-        expected = """
-        Statement for BigCo
-          Hamlet: $650.00 (55 seats)
-          As You Like It: $580.00 (35 seats)
-          Othello: $500.00 (40 seats)
-        Amount owed is $1,730.00
-        You earned 47 credits
-        """
-        actual = get_bill(invoice=self.invoice, plays=self.plays)
+        expected = (f"Statement for BigCo\n"
+                    f"  Hamlet: $650.00 (55 seats)\n"
+                    f"  As You Like It: $580.00 (35 seats)\n"
+                    f"  Othello: $500.00 (40 seats)\n"
+                    "Amount owed is $1,730.00\n"
+                    "You earned 47 credits\n")
+        actual = get_bill(invoice=json.loads(self.invoice)[0], plays=json.loads(self.plays))
         self.assertEqual(actual, expected)
