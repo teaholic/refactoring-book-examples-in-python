@@ -1,6 +1,6 @@
 import math
 
-def get_bill(invoice, plays):
+def get_statement(invoice, plays):
     total_amount = 0
     volume_credits = 0
     result = f"Statement for {invoice['customer']}\n"
