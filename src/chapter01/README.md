@@ -1,6 +1,6 @@
 # The theatrical company loyalty program
 
-Here below, some quotes from [Refactoring](https://martinfowler.com/books/refactoring.html), Chapter 1 (2nd edition) that I find useful to guide this refactoring kata.
+Here below, some quotes from [Refactoring](https://martinfowler.com/books/refactoring.html), Chapter 1 (2nd edition) that I find useful to practice refactoring with the code in `src/chapter01/main.py`.
 
 > Frankly, it is not worth the effort to do all the refactoring that I’m going to show you on the small program I will be using. But **if the code I’m showing you is part of a larger system, then the refactoring becomes important**. Just look at my example and imagine it in the context of a much larger system.
 
