@@ -2,7 +2,7 @@
 
 Here below, some quotes from [Refactoring](https://martinfowler.com/books/refactoring.html), Chapter 1 (2nd edition) that I find useful to guide this refactoring kata.
 
-> With any introductory example, however, I run into a problem. If I pick a large program, describing it and how it is refactored is too complicated for a mortal reader to work through. (I tried this with the original book—and ended up throwing away two examples, which were still pretty small but took over a hundred pages each to describe.) However, if I pick a program that is small enough to be comprehensible, refactoring does not look like it is worthwhile.
+> Frankly, it is not worth the effort to do all the refactoring that I’m going to show you on the small program I will be using. But **if the code I’m showing you is part of a larger system, then the refactoring becomes important**. Just look at my example and imagine it in the context of a much larger system.
 
 ## How could this functionality change?
 
