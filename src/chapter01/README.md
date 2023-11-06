@@ -4,6 +4,8 @@ Here below, some quotes from [Refactoring](https://martinfowler.com/books/refact
 
 > Frankly, it is not worth the effort to do all the refactoring that I’m going to show you on the small program I will be using. But **if the code I’m showing you is part of a larger system, then the refactoring becomes important**. Just look at my example and imagine it in the context of a much larger system.
 
+> Image a company of theatrical players who go out to various events performing plays. Typically, a customer will request a few plays and the company charges them based on the size of the audience and the kind of play they perform. There are currently two kinds of plays that the company performs: tragedies and comedies. As well as providing a bill for the performance, the company gives its customers “volume credits” which they can use for discounts on future performances—think of it as a customer loyalty mechanism.
+
 ## How could this functionality change?
 
 > First, they want a **statement printed in HTML**. Consider what impact this change would have. I’m faced with adding conditional statements around every statement that adds a string to the result. That will add a host of complexity to the function. Faced with that, most people prefer to copy the method and change it to emit HTML. Making a copy may not seem too onerous a task, but it sets up all sorts of problems for the future. Any changes to the charging logic would force me to update both methods—and to ensure they are updated consistently.
