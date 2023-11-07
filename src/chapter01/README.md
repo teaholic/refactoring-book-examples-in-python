@@ -18,4 +18,9 @@ Here below, some quotes from [Refactoring](https://martinfowler.com/books/refact
 
 > As is often the case with refactoring, the early stages were mostly driven by trying to **understand** what was going on. 
 
+## How to refactor?
+
+1. Add tests
+> **I need to ensure I have a solid set of tests** for that section of code. The tests are essential because even though I will follow refactorings structured to avoid most of the opportunities for introducing bugs, I’m still human and still make mistakes. The larger a program, the more likely it is that my changes will cause something to break inadvertently—in the digital age, frailty’s name is software.
+
 > A common sequence is: Read the code, gain some insight, and **use refactoring to move that insight from your head back into the code**. The clearer code then makes it easier to understand it, leading to deeper insights and a beneficial positive feedback loop. There are still some improvements I could make, but I feel I’ve done enough to pass my test of leaving the code significantly better than how I found it.
